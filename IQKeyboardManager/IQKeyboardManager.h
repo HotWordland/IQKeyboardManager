@@ -340,14 +340,19 @@ extern NSInteger const kIQPreviousNextButtonToolbarTag;
 /// @name Must not be used for subclassing.
 ///----------------------------------------
 
-/**
- Unavailable. Please use sharedManager method
- */
--(nonnull instancetype)init NS_UNAVAILABLE;
+
+///----------------------------------------
+/// @name delete `NS_UNAVAILABLE` modify for subclassing.
+///----------------------------------------
 
 /**
  Unavailable. Please use sharedManager method
  */
-+ (nonnull instancetype)new NS_UNAVAILABLE;
+-(nonnull instancetype)init;
+
+/**
+ Unavailable. Please use sharedManager method
+ */
++ (nonnull instancetype)new;
 
 @end

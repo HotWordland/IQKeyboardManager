@@ -194,7 +194,8 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 +(void)load
 {
     //Enabling IQKeyboardManager. Loading asynchronous on main thread
-    [self performSelectorOnMainThread:@selector(sharedManager) withObject:nil waitUntilDone:NO];
+    // modify subclass enabled delete this line . enable this original with `shareManage` anywhere
+    // [self performSelectorOnMainThread:@selector(sharedManager) withObject:nil waitUntilDone:NO];
 }
 
 /*  Singleton Object Initialization. */
